@@ -1,38 +1,44 @@
-.App {
+body {
+  width: screen;
+  height: screen;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::placeholder {
+  color: #c4c4c4;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* date input 커스텀을 위한 속성 */
+input[type="date"]::before {
+  content: attr(placeholder);
+  position: absolute;
+  color: #c4c4c4;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input[type="date"] {
+  color: #ffffff;
 }
 
-.App-link {
-  color: #61dafb;
+input[type="date"]:focus,
+input[type="date"]:valid {
+  color: #c4c4c4;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+input[type="date"]:focus::before,
+input[type="date"]:valid::before {
+  content: "";
+}
+
+input[type="date"]:not(:focus):invalid {
+  &::-webkit-datetime-edit-text,
+  &::-webkit-datetime-edit-month-field,
+  &::-webkit-datetime-edit-day-field,
+  &::-webkit-datetime-edit-year-field {
+    -webkit-appearance: none;
+    display: none;
   }
 }
