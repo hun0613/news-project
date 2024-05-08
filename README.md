@@ -91,5 +91,5 @@ React-Query를 사용한 가장 큰 이유는 무한스크롤을 구현할 수 �
 ---
 ### 📌 회고
 이번 프로젝트를 통해, 무한스크롤 구현에 필요한 IntersectionObserver 훅과 react-query의 useInfiniteQuery를 깊이 분석해보는 기회를 가질 수 있었습니다. <br />
-이를 통해 react-query의 캐싱메모리를 활용하여 좀 더 나은 성능의 무한 스크롤을 구현할 수 있어서 개발자로서 한층 더 성장한 느낌을 받응 수 있었고, 그동안 회사에서나 개인프로젝트에서 Tailwind CSS만 써서, Styled-Components에 대한 감각이 많이 사라져있는 상황이었는데, 이번 프로젝트를 통해서 Styled-Components에 대한 감각을 다시 살릴 수 있어서 좋았습니다.
+이를 통해 react-query의 캐싱메모리를 활용하여 좀 더 나은 성능의 무한 스크롤을 구현할 수 있어서 개발자로서 한층 더 성장한 느낌을 받을 수 있었고, 그동안 회사에서나 개인프로젝트에서 Tailwind CSS만 써서, Styled-Components에 대한 감각이 많이 사라져있는 상황이었는데, 이번 프로젝트를 통해서 Styled-Components에 대한 감각을 다시 살릴 수 있어서 좋았습니다.
 
